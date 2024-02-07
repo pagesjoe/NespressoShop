@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+/*Navigation bar*/
+nav{
+    background-color: white;
+    border-bottom: 1px solid rgb(226, 225, 225);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+nav img{
+    height: 80px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+li{
+    padding-left: 50px;
+    font-size: 1.1rem;
+    
+}
+@media screen and (max-width:600px){
+    li{
+        padding: 0;
+    }
+}
+.signin-button{
+    border-style: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    width: 220px;
+    padding: 7px 10px;
+}
+@media screen and (max-width:600px){
+    .nav-box{
+        border: 0px;
+        background: none;
+        width: auto;
+    }
+}
+.nav-box-signin{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:600px){
+    .nav-box-signin{
+        background: none;
+        color: black;
+    }
+    .nav-box-signin-text{
+        margin-left: 5px;
+    }
+    .nav-box-cart-text{
+        display: none;
+    }
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;    
+    text-align: center;
+    width: 220px;
+}
+@media screen and (max-width:600px){
+    .dropdown{
+        width: auto;
+    }
+}
+.dropdown li{
+    padding: 0;
+    border-bottom: 1px solid black;
+    padding: 7px 3px;
+
+}
+.dropdown_show{
+    display: block;
+}
+
+.nav-box-signin:hover{
+    background-color: white;
+    color: black;
+}
+.nav-box-cart:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:600px){
+    .nav-box-cart:hover{
+        background: none;
+        color: black;
+    }
+}
+
+/*Orders Section*/
+.orders-sec{
+    margin-top: 100px;
+}
+.order{
+    border: 1px solid black;
+    width: 700px;
+    margin: auto;    
+}
+@media screen and (max-width:600px){
+    .order{
+        width: auto;
+        margin:15px;
+    }
+}
+.order-details{
+    background-color: #F0F2F2;
+    display: flex;
+    justify-content: space-around;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+.product img{
+    width: 120px;
+}
